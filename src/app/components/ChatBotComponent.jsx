@@ -10,7 +10,7 @@ class ChatBot extends React.Component {
    constructor() {
     super();
     this.state = {
-      showReply: false,
+      showReply: true,
     }
   }
 
@@ -34,7 +34,6 @@ class ChatBot extends React.Component {
       <div id="chat-bot">
         <div className="chat-window">
           { this.state.showReply && < ReplyForm /> }
-          <div className="chat-footer"></div>
         </div>
         <div id="chat-bot-btn">
           <button className="material-button material-button-toggle bg-color" type="button" onClick={this.onClick.bind(this)}>
@@ -47,6 +46,11 @@ class ChatBot extends React.Component {
 }
 
 export default ChatBot;
+var items = { position: 'left',
+              type: 'text',
+              text: 'Sample Message ',
+              date: new Date(),
+            };
 
 class ReplyForm extends React.Component {
   constructor() {
@@ -56,10 +60,29 @@ class ReplyForm extends React.Component {
         name: "Jhone cena"
       },
       images: {
-        head: 'public/webchat-ava.svg'
-      }
+        head: 'public//webchat-ava.svg'
+      },
+      dataSource: []
+    },
+
+    this.state.dataSource.push(items);
+  }
+
+  handleChange(event) {
+    if(event.key =='Enter'){
+      var message = {position:'right',type: 'text', text: event.target.value, date: new Date()};
+      var list = this.state.dataSource;
+      list.push(message)
+      list.push(items)
+
+      this.setState({
+          dataSource: list,
+      });
+
+      this.refs.input_field.value = '';
     }
   }
+
   render(){
     return(
     <div className="chat_boundary">
@@ -70,95 +93,15 @@ class ReplyForm extends React.Component {
 
       <div className="chat_box">
         <MessageList className='message-list' lockable={true} toBottomHeight={'100%'}
-            dataSource={[
-                {
-                    position: 'left',
-                    type: 'text',
-                    text: 'Sample Message ',
-                    date: new Date(),
-                },
-                {
-                    position: 'right',
-                    type: 'text',
-                    text: 'Please Enter Your Message ',
-                    date: new Date(),
-                },
-                {
-                    position: 'right',
-                    type: 'text',
-                    text: 'How can I assist you ',
-                    date: new Date(),
-                }, {
-                    position: 'right',
-                    type: 'text',
-                    text: 'Sample Message ',
-                    date: new Date(),
-                },
-                {
-                    position: 'right',
-                    type: 'text',
-                    text: 'Please Enter Your Message ',
-                    date: new Date(),
-                },
-                {
-                    position: 'right',
-                    type: 'text',
-                    text: 'How can I assist you ',
-                    date: new Date(),
-                }, {
-                    position: 'right',
-                    type: 'text',
-                    text: 'Sample Message ',
-                    date: new Date(),
-                },
-                {
-                    position: 'right',
-                    type: 'text',
-                    text: 'Please Enter Your Message ',
-                    date: new Date(),
-                },
-                {
-                    position: 'right',
-                    type: 'text',
-                    text: 'How can I assist you ',
-                    date: new Date(),
-                }, {
-                    position: 'right',
-                    type: 'text',
-                    text: 'Sample Message ',
-                    date: new Date(),
-                },
-                {
-                    position: 'right',
-                    type: 'text',
-                    text: 'Please Enter Your Message ',
-                    date: new Date(),
-                },
-                {
-                    position: 'right',
-                    type: 'text',
-                    text: 'How can I assist you ',
-                    date: new Date(),
-                }, {
-                    position: 'right',
-                    type: 'text',
-                    text: 'Sample Message ',
-                    date: new Date(),
-                },
-                {
-                    position: 'right',
-                    type: 'text',
-                    text: 'Please Enter Your Message ',
-                    date: new Date(),
-                },
-                {
-                    position: 'right',
-                    type: 'text',
-                    text: 'How can I assist you ',
-                    date: new Date(),
-                },
-          ]} />
+            dataSource={this.state.dataSource} />
       </div>
+
+      <div className="chat-footer">
+        <div className="input_area">
+            <input type="text" placeholder="Write a message" className="input_form" ref="input_field" value={this.state.value} onKeyPress={this.handleChange.bind(this)} />
+        </div>
+      </div>
+
     </div>
     )
   }
