@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>icon / close</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Chat-Window---Hand-off" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-387.000000, -833.000000)">
+        <g id="Chat" transform="translate(60.000000, 50.000000)">
+            <g id="Chat-Launcher" transform="translate(304.000000, 760.000000)">
+                <g id="icon-/-close" transform="translate(20.000000, 20.000000)">
+                    <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                    <polygon id="Shape" fill="#FFFFFF" fill-rule="nonzero" points="21 4.46149871 19.5374677 3 12.0005168 10.5379845 4.4625323 3 3 4.46149871 10.5379845 11.9994832 3 19.5374677 4.4625323 20.9989664 12.0005168 13.4609819 19.5374677 20.9989664 21 19.5374677 13.4620155 11.9994832"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

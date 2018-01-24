@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Ava</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+        <filter x="-52.1%" y="-43.8%" width="204.2%" height="204.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.196078431   0 0 0 0 0.196078431   0 0 0 0 0.364705882  0 0 0 0.14 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Chat-Notifications" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-83.000000, -51.000000)">
+        <g id="Ava-Message" transform="translate(89.000000, 56.000000)">
+            <g id="From-Message">
+                <g id="Container">
+                    <g id="Ava">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="Group-3" mask="url(#mask-2)">
+                            <g transform="translate(3.200000, 2.400000)">
+                                <rect id="Rectangle" fill="#859DA4" x="0" y="5.632" width="17.6" height="12.8" rx="6.4"></rect>
+                                <rect id="Rectangle-2" fill="#FFFFFF" x="2.816" y="7.744" width="11.968" height="4.928" rx="2.464"></rect>
+                                <g id="Group-2" stroke-width="1" fill="none" transform="translate(4.224000, 8.448000)">
+                                    <circle id="Oval-4" fill="#3FAAC0" cx="6.688" cy="1.76" r="1.76"></circle>
+                                    <circle id="Oval-4-Copy" fill="#3FAAC0" cx="1.76" cy="1.76" r="1.76"></circle>
+                                </g>
+                                <polygon id="Triangle" fill="#859DA4" points="8.8 1.408 9.856 6.336 7.744 6.336"></polygon>
+                                <circle id="Oval-3" fill="#F1495D" cx="8.8" cy="1.76" r="1.76"></circle>
+                                <path d="M8.76747214,16.5440001 C7.01368008,16.5440001 5.45070402,15.524528 4.8,14.4 L12.7445923,14.4 C12.1110403,15.527744 10.5727202,16.5440001 8.76747214,16.5440001 Z" id="Shape" fill="#FFFFFF"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
